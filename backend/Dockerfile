@@ -17,4 +17,4 @@ COPY . .
 
 EXPOSE 7001
 
-CMD [ "yarn", "start" ]
+CMD [ "yarn", "start:nodemon" ]
