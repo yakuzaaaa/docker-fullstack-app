@@ -15,6 +15,6 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 7000
+EXPOSE 7001
 
 CMD [ "yarn", "start" ]
