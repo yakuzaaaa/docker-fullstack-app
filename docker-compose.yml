@@ -1,0 +1,15 @@
+services:
+    api:
+        container_name: nilarnab-node-api
+        restart: always
+        build: ./backend/
+        ports:
+            - "7001:7001"
+    frontend:
+        container_name: nilarnab-react-frontend
+        restart: always
+        build: ./frontend/
+        ports:
+            - "7002:7002"
+
+

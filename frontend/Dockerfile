@@ -1,20 +1,20 @@
 FROM node:14
 
 # Create app directory
-WORKDIR /backend
+WORKDIR /frontend
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
-COPY package*.json /backend/
+COPY package*.json /frontend/
 
 RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
 
 # Bundle app source
-COPY . /backend/
+COPY . /frontend/
 
-EXPOSE 7001
+EXPOSE 7002
 
-CMD [ "yarn", "start:nodemon" ]
+CMD [ "yarn", "start" ]
